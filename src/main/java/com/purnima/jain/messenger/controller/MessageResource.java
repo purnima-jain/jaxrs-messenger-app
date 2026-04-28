@@ -17,8 +17,10 @@ public class MessageResource {
 	private MessageService messageService = new MessageService();
 
 	@GET
-	public List<Message> getMessages() {
+	public List<Message> getAllMessages() {
 		return messageService.getAllMessages();
 	}
+	
+
 
 }

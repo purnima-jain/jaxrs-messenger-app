@@ -1,7 +1,5 @@
 package com.purnima.jain.messenger.model;
 
-import java.util.Date;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,11 +7,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Message {
+public class Profile {
 
 	private Long id;
-	private String message;
-	private Date created;
-	private String author;
+	private String profileName;
+	private String firstName;
+	private String lastName;
+	private String created;
 
 }
