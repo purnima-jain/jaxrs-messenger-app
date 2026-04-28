@@ -26,6 +26,28 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "Get-Message",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/messenger/api/messages/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "messenger",
+            "api",
+            "messages",
+            "2"
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
