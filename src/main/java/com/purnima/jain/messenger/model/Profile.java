@@ -1,5 +1,9 @@
 package com.purnima.jain.messenger.model;
 
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,6 +17,8 @@ public class Profile {
 	private String profileName;
 	private String firstName;
 	private String lastName;
-	private String created;
+	
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+	private Date created;
 
 }
